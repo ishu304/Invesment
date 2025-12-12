@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,116 +9,84 @@
         .hero-gradient {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-
         .profit-gradient {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
-
         .success-gradient {
             background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
         }
-
         .card-hover {
             transition: all 0.3s ease;
         }
-
         .card-hover:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
-
         .scroll-smooth {
             scroll-behavior: smooth;
         }
-
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
         .animate-fade-in {
             animation: fadeIn 0.6s ease-out;
         }
-
         @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
-
         .pulse-animation {
             animation: pulse 2s infinite;
         }
-
         .premium-badge {
             background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
         }
-
         @keyframes countUp {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-
         .count-animation {
             animation: countUp 2s ease-out;
         }
-
         .account-step {
             animation: fadeIn 0.3s ease-out;
         }
-
-        input:focus,
-        select:focus {
+        input:focus, select:focus {
             border-color: #3b82f6;
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
-
         input[type="checkbox"]:checked {
             background-color: #3b82f6;
         }
-
         .border-2:has(input[type="radio"]:checked) {
             border-color: #3b82f6;
             background-color: #eff6ff;
         }
     </style>
-
+    
     <!-- Ad Script 1 - EffectiveGate CPM -->
-    <script async="async" data-cfasync="false"
-        src="https://pl28241877.effectivegatecpm.com/bf19afaab9806cf7fd5567a32c79e073/invoke.js"></script>
-
+    <script
+        async="async"
+        data-cfasync="false"
+        src="https://pl28241877.effectivegatecpm.com/bf19afaab9806cf7fd5567a32c79e073/invoke.js"
+    ></script>
+    
     <!-- Ad Script 2 - High Performance Format -->
     <script type="text/javascript">
         atOptions = {
-            'key': 'c3058cf55b86ba1fbcafbde6fa4f6f1f',
-            'format': 'iframe',
-            'height': 50,
-            'width': 320,
-            'params': {}
+            'key' : 'c3058cf55b86ba1fbcafbde6fa4f6f1f',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
         };
     </script>
-    <script type="text/javascript"
-        src="https://www.highperformanceformat.com/c3058cf55b86ba1fbcafbde6fa4f6f1f/invoke.js"></script>
+    <script
+        type="text/javascript"
+        src="https://www.highperformanceformat.com/c3058cf55b86ba1fbcafbde6fa4f6f1f/invoke.js"
+    ></script>
 </head>
-
 <body class="scroll-smooth">
     <!-- Age Verification Modal (Shows First) -->
     <div id="ageVerificationModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center">
@@ -134,17 +101,14 @@
                     <label class="text-sm text-gray-600">Enter Your Date of Birth</label>
                     <input type="date" id="dobInput" class="w-full px-4 py-3 border rounded-lg mt-1" required>
                 </div>
-                <button onclick="quickVerifyAge()"
-                    class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
+                <button onclick="quickVerifyAge()" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
                     Verify & Enter →
                 </button>
                 <div class="flex items-center space-x-4">
-                    <button onclick="quickVerify18Plus()"
-                        class="flex-1 bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 text-sm">
+                    <button onclick="quickVerify18Plus()" class="flex-1 bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 text-sm">
                         I'm 18+ Years
                     </button>
-                    <button onclick="quickVerifyStudent()"
-                        class="flex-1 bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600 text-sm">
+                    <button onclick="quickVerifyStudent()" class="flex-1 bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600 text-sm">
                         I'm a Student (18+)
                     </button>
                 </div>
@@ -162,29 +126,20 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
-                    <a href="#ad-earning" class="text-orange-600 hover:text-orange-700 transition font-bold">🔥 Earn
-                        Money</a>
+                    <a href="#ad-earning" class="text-orange-600 hover:text-orange-700 transition font-bold">🔥 Earn Money</a>
                     <a href="#how-it-works" class="text-gray-700 hover:text-blue-600 transition">How It Works</a>
                     <a href="#investments" class="text-gray-700 hover:text-blue-600 transition">Investment Options</a>
                     <a href="#education" class="text-gray-700 hover:text-blue-600 transition">Learn</a>
                     <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition">Platform Fees</a>
-                    <button onclick="openLoginModal()"
-                        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Login/Register</button>
-                    <button onclick="showDepositModal()"
-                        class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">💰
-                        Deposit</button>
-                    <button onclick="showWithdrawModal()"
-                        class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">💸
-                        Withdraw</button>
-                    <button id="portfolioBtn"
-                        class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">₹0
-                        Balance</button>
+                    <button onclick="openLoginModal()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Login/Register</button>
+                    <button onclick="showDepositModal()" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">💰 Deposit</button>
+                    <button onclick="showWithdrawModal()" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">💸 Withdraw</button>
+                    <button id="portfolioBtn" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">₹0 Balance</button>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-gray-700 hover:text-purple-600">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
@@ -194,30 +149,21 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
-                <a href="#ad-earning"
-                    class="block px-3 py-2 text-orange-600 hover:text-orange-700 transition font-bold">🔥 Earn Money</a>
-                <a href="#how-it-works" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">How It
-                    Works</a>
-                <a href="#investments" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">Investment
-                    Options</a>
+                <a href="#ad-earning" class="block px-3 py-2 text-orange-600 hover:text-orange-700 transition font-bold">🔥 Earn Money</a>
+                <a href="#how-it-works" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">How It Works</a>
+                <a href="#investments" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">Investment Options</a>
                 <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">Learn</a>
-                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">Platform
-                    Fees</a>
-                <button onclick="openLoginModal()"
-                    class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition w-full mb-2">Login/Register</button>
-                <button onclick="showDepositModal()"
-                    class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition w-full mb-2">💰
-                    Deposit</button>
-                <button onclick="showWithdrawModal()"
-                    class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition w-full">💸
-                    Withdraw</button>
+                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition">Platform Fees</a>
+                <button onclick="openLoginModal()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition w-full mb-2">Login/Register</button>
+                <button onclick="showDepositModal()" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition w-full mb-2">💰 Deposit</button>
+                <button onclick="showWithdrawModal()" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition w-full">💸 Withdraw</button>
             </div>
         </div>
     </nav>
 
     <!-- Ad Container 1 - Top of Page -->
     <div id="container-bf19afaab9806cf7fd5567a32c79e073"></div>
-
+    
     <!-- Hero Section -->
     <section id="home" class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white pt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
@@ -226,19 +172,15 @@
                     📚 Special Student Investment Plans Available
                 </div>
                 <h1 class="text-5xl md:text-6xl font-bold mb-6">Learn & Earn Through Smart Investments</h1>
-                <p class="text-xl md:text-2xl mb-4 opacity-90">Professional Investment Platform for Students & Young
-                    Professionals</p>
+                <p class="text-xl md:text-2xl mb-4 opacity-90">Professional Investment Platform for Students & Young Professionals</p>
                 <div class="bg-white/20 backdrop-blur-sm inline-block px-6 py-3 rounded-lg mb-8">
-                    <span class="font-bold">⚠️ Risk Disclosure:</span> Stock market investments are subject to market
-                    risks
+                    <span class="font-bold">⚠️ Risk Disclosure:</span> Stock market investments are subject to market risks
                 </div>
                 <div class="space-y-4 md:space-y-0 md:space-x-4">
-                    <button onclick="openAccountModal()"
-                        class="bg-white text-blue-600 px-10 py-4 rounded-lg font-bold hover:bg-gray-100 transition transform hover:scale-105 text-lg">
+                    <button onclick="openAccountModal()" class="bg-white text-blue-600 px-10 py-4 rounded-lg font-bold hover:bg-gray-100 transition transform hover:scale-105 text-lg">
                         🚀 Start Investing (18+ Only)
                     </button>
-                    <button onclick="showEducationModal()"
-                        class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition transform hover:scale-105 text-lg">
+                    <button onclick="showEducationModal()" class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition transform hover:scale-105 text-lg">
                         📚 Free Investment Course
                     </button>
                 </div>
@@ -275,8 +217,7 @@
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">💰 Earn Money with Google Ads</h2>
                 <p class="text-xl text-gray-600">Watch ads, complete tasks, and earn daily!</p>
-                <div
-                    class="bg-green-100 text-green-700 inline-block px-4 py-2 rounded-lg mt-2 font-semibold animate-pulse">
+                <div class="bg-green-100 text-green-700 inline-block px-4 py-2 rounded-lg mt-2 font-semibold animate-pulse">
                     🔥 Earn ₹500-₹5000 Daily by Watching Ads!
                 </div>
             </div>
@@ -294,9 +235,7 @@
                             <li>• Instant Credit</li>
                             <li>• Bonus for 10 videos</li>
                         </ul>
-                        <button onclick="startWatchingAds()"
-                            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition w-full">Start
-                            Watching</button>
+                        <button onclick="startWatchingAds()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition w-full">Start Watching</button>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
@@ -312,9 +251,7 @@
                             <li>• Simple Click & Earn</li>
                             <li>• No Investment Needed</li>
                         </ul>
-                        <button onclick="startClickAds()"
-                            class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition w-full">Click
-                            Ads Now</button>
+                        <button onclick="startClickAds()" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition w-full">Click Ads Now</button>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg card-hover relative">
@@ -331,13 +268,10 @@
                             <li>• Survey + Ad Watch</li>
                             <li>• Share & Earn More</li>
                         </ul>
-                        <button onclick="showAdTasks()"
-                            class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">View
-                            Tasks</button>
+                        <button onclick="showAdTasks()" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">View Tasks</button>
                     </div>
                 </div>
-                <div
-                    class="bg-gradient-to-br from-yellow-400 to-orange-500 p-6 rounded-xl shadow-lg card-hover text-white">
+                <div class="bg-gradient-to-br from-yellow-400 to-orange-500 p-6 rounded-xl shadow-lg card-hover text-white">
                     <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
                         <span class="text-3xl">💎</span>
                     </div>
@@ -350,9 +284,7 @@
                             <li>• Priority Ad Access</li>
                             <li>• 2X Earning Rate</li>
                         </ul>
-                        <button onclick="upgradeToPremiumAds()"
-                            class="bg-white text-orange-500 px-6 py-2 rounded-lg hover:bg-gray-100 transition w-full font-bold">Upgrade
-                            Now</button>
+                        <button onclick="upgradeToPremiumAds()" class="bg-white text-orange-500 px-6 py-2 rounded-lg hover:bg-gray-100 transition w-full font-bold">Upgrade Now</button>
                     </div>
                 </div>
             </div>
@@ -394,8 +326,7 @@
                         <span class="text-3xl">1️⃣</span>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-3">Create Account & Verify</h3>
-                    <p class="text-gray-600 mb-4">Complete KYC with Aadhaar & PAN. Must be 18+ years old. Student ID for
-                        special benefits.</p>
+                    <p class="text-gray-600 mb-4">Complete KYC with Aadhaar & PAN. Must be 18+ years old. Student ID for special benefits.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
                         <li>✓ Age verification mandatory</li>
                         <li>✓ Bank account linking</li>
@@ -407,8 +338,7 @@
                         <span class="text-3xl">2️⃣</span>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-3">Choose Investment Option</h3>
-                    <p class="text-gray-600 mb-4">Select from stocks, mutual funds, or ETFs based on your risk profile.
-                    </p>
+                    <p class="text-gray-600 mb-4">Select from stocks, mutual funds, or ETFs based on your risk profile.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
                         <li>✓ Professional recommendations</li>
                         <li>✓ Risk-reward analysis</li>
@@ -420,8 +350,7 @@
                         <span class="text-3xl">3️⃣</span>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-3">Platform Fee Structure</h3>
-                    <p class="text-gray-600 mb-4">We charge 20% only on profits. No fees on losses. Complete
-                        transparency.</p>
+                    <p class="text-gray-600 mb-4">We charge 20% only on profits. No fees on losses. Complete transparency.</p>
                     <ul class="text-sm text-gray-600 space-y-2">
                         <li>✓ 20% on profitable trades</li>
                         <li>✓ 0% on loss-making trades</li>
@@ -442,12 +371,9 @@
                     📈 Market Risk Warning: Past performance doesn't guarantee future results
                 </div>
                 <div class="mt-4 text-sm text-gray-500">
-                    <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full mr-2">✓ SEBI
-                        Registered</span>
-                    <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full mr-2">✓ NSE & BSE
-                        Listed</span>
-                    <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full">✓ CDSL
-                        Partner</span>
+                    <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full mr-2">✓ SEBI Registered</span>
+                    <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full mr-2">✓ NSE & BSE Listed</span>
+                    <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full">✓ CDSL Partner</span>
                 </div>
             </div>
             <div class="grid md:grid-cols-4 gap-6">
@@ -458,38 +384,26 @@
                         <div class="text-blue-600 font-semibold mb-4">Low Risk Mutual Funds</div>
                         <ul class="text-left space-y-2 mb-6 text-sm">
                             <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Index Funds</li>
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Expected Return:
-                                8-12% p.a.</li>
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Platform Fee: 20%
-                                on profits</li>
-                            <li class="flex items-center"><span class="text-yellow-500 mr-2">⚠️</span> Risk: Low to
-                                Medium</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Expected Return: 8-12% p.a.</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Platform Fee: 20% on profits</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">⚠️</span> Risk: Low to Medium</li>
                         </ul>
-                        <button onclick="selectInvestment('mutual-fund')"
-                            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition w-full">Start
-                            SIP</button>
+                        <button onclick="selectInvestment('mutual-fund')" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition w-full">Start SIP</button>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition relative">
-                    <div class="absolute -top-3 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs">POPULAR
-                    </div>
+                    <div class="absolute -top-3 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs">POPULAR</div>
                     <div class="text-center">
                         <div class="text-gray-500 text-sm">GROWTH STOCKS</div>
                         <div class="text-3xl font-bold text-gray-800 my-4">₹1,000+</div>
                         <div class="text-green-600 font-semibold mb-4">Blue-chip Stocks</div>
                         <ul class="text-left space-y-2 mb-6 text-sm">
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> NIFTY 50 Companies
-                            </li>
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Expected Return:
-                                12-18% p.a.</li>
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Platform Fee: 20%
-                                on profits</li>
-                            <li class="flex items-center"><span class="text-orange-500 mr-2">⚠️</span> Risk: Medium to
-                                High</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> NIFTY 50 Companies</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Expected Return: 12-18% p.a.</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Platform Fee: 20% on profits</li>
+                            <li class="flex items-center"><span class="text-orange-500 mr-2">⚠️</span> Risk: Medium to High</li>
                         </ul>
-                        <button onclick="selectInvestment('stocks')"
-                            class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition w-full">Invest
-                            Now</button>
+                        <button onclick="selectInvestment('stocks')" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition w-full">Invest Now</button>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
@@ -498,37 +412,26 @@
                         <div class="text-3xl font-bold text-gray-800 my-4">₹5,000+</div>
                         <div class="text-purple-600 font-semibold mb-4">ETF Portfolio</div>
                         <ul class="text-left space-y-2 mb-6 text-sm">
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Diversified ETFs
-                            </li>
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Expected Return:
-                                10-15% p.a.</li>
-                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Platform Fee: 20%
-                                on profits</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Diversified ETFs</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Expected Return: 10-15% p.a.</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Platform Fee: 20% on profits</li>
                             <li class="flex items-center"><span class="text-yellow-500 mr-2">⚠️</span> Risk: Medium</li>
                         </ul>
-                        <button onclick="selectInvestment('etf')"
-                            class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Start
-                            Portfolio</button>
+                        <button onclick="selectInvestment('etf')" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Start Portfolio</button>
                     </div>
                 </div>
-                <div
-                    class="bg-gradient-to-br from-gray-800 to-black p-6 rounded-xl shadow-lg hover:shadow-2xl transition text-white">
+                <div class="bg-gradient-to-br from-gray-800 to-black p-6 rounded-xl shadow-lg hover:shadow-2xl transition text-white">
                     <div class="text-center">
                         <div class="text-gray-300 text-sm">PREMIUM</div>
                         <div class="text-3xl font-bold my-4">₹10,000+</div>
                         <div class="text-yellow-400 font-semibold mb-4">Managed Portfolio</div>
                         <ul class="text-left space-y-2 mb-6 text-sm">
-                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Professional
-                                Management</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Expected Return:
-                                15-25% p.a.</li>
-                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Platform Fee: 20%
-                                on profits</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Professional Management</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Expected Return: 15-25% p.a.</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Platform Fee: 20% on profits</li>
                             <li class="flex items-center"><span class="text-red-400 mr-2">⚠️</span> Risk: High</li>
                         </ul>
-                        <button onclick="selectInvestment('premium')"
-                            class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-lg hover:from-yellow-500 hover:to-orange-600 transition w-full">Get
-                            Started</button>
+                        <button onclick="selectInvestment('premium')" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-lg hover:from-yellow-500 hover:to-orange-600 transition w-full">Get Started</button>
                     </div>
                 </div>
             </div>
@@ -547,37 +450,28 @@
                     <h3 class="text-2xl font-bold text-gray-800 mb-6">How Referral Program Works:</h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <div
-                                class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
-                                1</div>
+                            <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</div>
                             <div>
                                 <h4 class="font-semibold text-gray-800">Share Your Unique Link</h4>
-                                <p class="text-gray-600">Get your personalized referral link and share it with friends
-                                </p>
+                                <p class="text-gray-600">Get your personalized referral link and share it with friends</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div
-                                class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
-                                2</div>
+                            <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</div>
                             <div>
                                 <h4 class="font-semibold text-gray-800">They Sign Up & Invest</h4>
                                 <p class="text-gray-600">When they join and purchase any plan</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div
-                                class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
-                                3</div>
+                            <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">3</div>
                             <div>
                                 <h4 class="font-semibold text-gray-800">You Earn 30% Commission</h4>
                                 <p class="text-gray-600">Get instant commission credited to your wallet</p>
                             </div>
                         </div>
                     </div>
-                    <button onclick="getReferralLink()"
-                        class="mt-6 bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition">Get Your
-                        Referral Link</button>
+                    <button onclick="getReferralLink()" class="mt-6 bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition">Get Your Referral Link</button>
                 </div>
                 <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
                     <h3 class="text-xl font-bold text-gray-800 mb-4">Referral Earnings Calculator</h3>
@@ -621,11 +515,9 @@
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="premium-badge text-black text-xs px-3 py-1 rounded-full inline-block mb-4">BESTSELLER
-                    </div>
+                    <div class="premium-badge text-black text-xs px-3 py-1 rounded-full inline-block mb-4">BESTSELLER</div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Digital Marketing Mastery</h3>
-                    <p class="text-gray-600 mb-4">Complete guide to earn ₹1 Lakh+ per month through digital marketing
-                    </p>
+                    <p class="text-gray-600 mb-4">Complete guide to earn ₹1 Lakh+ per month through digital marketing</p>
                     <div class="text-gray-500 line-through">₹9,999</div>
                     <div class="text-3xl font-bold text-green-600 mb-4">₹499 only</div>
                     <ul class="space-y-2 mb-6 text-sm">
@@ -634,9 +526,7 @@
                         <li>✓ Lifetime Access</li>
                         <li>✓ Job Assistance</li>
                     </ul>
-                    <button onclick="buyCourse('digital')"
-                        class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Enroll
-                        Now</button>
+                    <button onclick="buyCourse('digital')" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Enroll Now</button>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <div class="bg-red-500 text-white text-xs px-3 py-1 rounded-full inline-block mb-4">HOT</div>
@@ -650,9 +540,7 @@
                         <li>✓ Risk Management</li>
                         <li>✓ 1-on-1 Mentoring</li>
                     </ul>
-                    <button onclick="buyCourse('trading')"
-                        class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Enroll
-                        Now</button>
+                    <button onclick="buyCourse('trading')" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Enroll Now</button>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <div class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full inline-block mb-4">NEW</div>
@@ -666,9 +554,7 @@
                         <li>✓ 100+ Resources</li>
                         <li>✓ Community Support</li>
                     </ul>
-                    <button onclick="buyCourse('freelancing')"
-                        class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Enroll
-                        Now</button>
+                    <button onclick="buyCourse('freelancing')" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition w-full">Enroll Now</button>
                 </div>
             </div>
         </div>
@@ -736,32 +622,26 @@
                 <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-2 border-green-300">
                     <img src="https://i.pravatar.cc/150?img=1" class="w-20 h-20 rounded-full mb-4" alt="User">
                     <div class="text-2xl font-bold text-green-600 mb-2">₹35,000/month</div>
-                    <p class="text-gray-600 mb-4">"Started with just ₹99! Now paying my college fees myself. Working
-                        only 2 hours daily between classes!"</p>
+                    <p class="text-gray-600 mb-4">"Started with just ₹99! Now paying my college fees myself. Working only 2 hours daily between classes!"</p>
                     <div class="font-semibold text-gray-800">Arjun Kumar</div>
                     <div class="text-sm text-gray-500">IIT Delhi, B.Tech 3rd Year</div>
-                    <div class="mt-2 text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full inline-block">Top
-                        Student Earner</div>
+                    <div class="mt-2 text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full inline-block">Top Student Earner</div>
                 </div>
                 <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-2 border-blue-300">
                     <img src="https://i.pravatar.cc/150?img=5" class="w-20 h-20 rounded-full mb-4" alt="User">
                     <div class="text-2xl font-bold text-blue-600 mb-2">₹1,25,000/month</div>
-                    <p class="text-gray-600 mb-4">"Best decision ever! I quit my job and now earning double from home.
-                        The referral program alone gives me ₹50k monthly."</p>
+                    <p class="text-gray-600 mb-4">"Best decision ever! I quit my job and now earning double from home. The referral program alone gives me ₹50k monthly."</p>
                     <div class="font-semibold text-gray-800">Priya Patel</div>
                     <div class="text-sm text-gray-500">Mumbai, Housewife</div>
-                    <div class="mt-2 text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded-full inline-block">Top Earner
-                    </div>
+                    <div class="mt-2 text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded-full inline-block">Top Earner</div>
                 </div>
                 <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-2 border-purple-300">
                     <img src="https://i.pravatar.cc/150?img=3" class="w-20 h-20 rounded-full mb-4" alt="User">
                     <div class="text-2xl font-bold text-purple-600 mb-2">₹2,00,000/month</div>
-                    <p class="text-gray-600 mb-4">"Diamond member here! The investment plans give guaranteed returns.
-                        I'm making 6 figures monthly now!"</p>
+                    <p class="text-gray-600 mb-4">"Diamond member here! The investment plans give guaranteed returns. I'm making 6 figures monthly now!"</p>
                     <div class="font-semibold text-gray-800">Amit Kumar</div>
                     <div class="text-sm text-gray-500">Bangalore, IT Professional</div>
-                    <div class="mt-2 text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded-full inline-block">Diamond
-                        Member</div>
+                    <div class="mt-2 text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded-full inline-block">Diamond Member</div>
                 </div>
             </div>
         </div>
@@ -830,32 +710,24 @@
                 <h3 class="text-2xl font-bold mb-4">InvestEdu Pro</h3>
                 <p class="text-gray-400">India's #1 Investment Platform - Trusted by 15.7 Lakh+ Active Investors</p>
                 <div class="mt-4 flex justify-center space-x-4 flex-wrap">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Paytm_logo.svg/200px-Paytm_logo.svg.png"
-                        alt="Paytm" class="h-8 opacity-70">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/200px-UPI-Logo-vector.svg.png"
-                        alt="UPI" class="h-8 opacity-70">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Phonepe-logo.svg/200px-Phonepe-logo.svg.png"
-                        alt="PhonePe" class="h-8 opacity-70">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Paytm_logo.svg/200px-Paytm_logo.svg.png" alt="Paytm" class="h-8 opacity-70">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/200px-UPI-Logo-vector.svg.png" alt="UPI" class="h-8 opacity-70">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Phonepe-logo.svg/200px-Phonepe-logo.svg.png" alt="PhonePe" class="h-8 opacity-70">
                     <span class="text-xs bg-green-600 px-2 py-1 rounded">SEBI REG: INZ000208137</span>
                     <span class="text-xs bg-blue-600 px-2 py-1 rounded">NSE MEMBER: 90133</span>
                     <span class="text-xs bg-purple-600 px-2 py-1 rounded">BSE MEMBER: 40910</span>
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 InvestEdu Pro. All rights reserved. | Terms & Conditions | Privacy Policy | Risk
-                    Disclosure | Grievance Redressal</p>
-                <p class="mt-2 text-xs">Disclaimer: Investments are subject to market risks. Read all scheme related
-                    documents carefully before investing. Registration granted by SEBI, membership of BASL and
-                    certification from NISM in no way guarantee performance of the intermediary or provide any assurance
-                    of returns to investors.</p>
+                <p>&copy; 2024 InvestEdu Pro. All rights reserved. | Terms & Conditions | Privacy Policy | Risk Disclosure | Grievance Redressal</p>
+                <p class="mt-2 text-xs">Disclaimer: Investments are subject to market risks. Read all scheme related documents carefully before investing. Registration granted by SEBI, membership of BASL and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.</p>
             </div>
         </div>
     </footer>
 
     <!-- Modals -->
     <!-- Account Opening Modal for Start Investing -->
-    <div id="accountModal"
-        class="hidden fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center overflow-y-auto">
+    <div id="accountModal" class="hidden fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center overflow-y-auto">
         <div class="bg-white rounded-lg p-8 max-w-4xl w-full m-4 max-h-screen overflow-y-auto">
             <!-- Progress Bar -->
             <div class="mb-6">
@@ -864,9 +736,7 @@
                     <span class="text-sm text-gray-600" id="progressText">Step 1 of 4</span>
                 </div>
                 <div class="bg-gray-200 rounded-full h-2">
-                    <div id="setupProgress"
-                        class="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-500"
-                        style="width: 25%"></div>
+                    <div id="setupProgress" class="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-500" style="width: 25%"></div>
                 </div>
             </div>
 
@@ -874,7 +744,7 @@
             <div id="step1" class="account-step">
                 <h2 class="text-3xl font-bold mb-4">Start Your Investment Journey</h2>
                 <p class="text-gray-600 mb-6">Open your Demat & Trading account in just 5 minutes!</p>
-
+                
                 <div class="bg-green-100 border-l-4 border-green-500 p-4 mb-6">
                     <p class="font-semibold">✅ Zero Account Opening Charges</p>
                     <p class="text-sm text-gray-700">Usually ₹999 - FREE for limited time!</p>
@@ -884,46 +754,33 @@
                     <div class="grid md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Full Name*</label>
-                            <input type="text" placeholder="As per PAN Card"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="text" placeholder="As per PAN Card" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Date of Birth*</label>
-                            <input type="date"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                max="2006-01-01" required>
+                            <input type="date" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" max="2006-01-01" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Mobile Number*</label>
-                            <input type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Email ID*</label>
-                            <input type="email" placeholder="your@email.com"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">PAN Card Number*</label>
-                            <input type="text" placeholder="ABCDE1234F" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none uppercase"
-                                maxlength="10" required>
+                            <input type="text" placeholder="ABCDE1234F" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none uppercase" maxlength="10" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Aadhaar Number*</label>
-                            <input type="text" placeholder="12-digit Aadhaar" pattern="[0-9]{12}" maxlength="12"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="text" placeholder="12-digit Aadhaar" pattern="[0-9]{12}" maxlength="12" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                         </div>
                     </div>
-
+                    
                     <div class="mt-6">
                         <label class="block text-sm font-medium text-gray-700 mb-2">Occupation*</label>
-                        <select class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                            required>
+                        <select class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                             <option value="">Select Occupation</option>
                             <option value="student">Student (Get ₹500 Bonus)</option>
                             <option value="salaried">Salaried Employee</option>
@@ -935,10 +792,8 @@
                     </div>
 
                     <div class="mt-6 flex justify-between">
-                        <button type="button" onclick="closeModal('accountModal')"
-                            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">Cancel</button>
-                        <button type="submit"
-                            class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
+                        <button type="button" onclick="closeModal('accountModal')" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">Cancel</button>
+                        <button type="submit" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
                             Continue →
                         </button>
                     </div>
@@ -949,13 +804,12 @@
             <div id="step2" class="account-step hidden">
                 <h2 class="text-3xl font-bold mb-4">Link Your Bank Account</h2>
                 <p class="text-gray-600 mb-6">For seamless deposits and withdrawals</p>
-
+                
                 <form onsubmit="nextStep(event, 3)">
                     <div class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Bank Name*</label>
-                            <select class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <select class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                                 <option value="">Select Bank</option>
                                 <option value="sbi">State Bank of India</option>
                                 <option value="hdfc">HDFC Bank</option>
@@ -969,33 +823,25 @@
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Account Number*</label>
-                            <input type="text" placeholder="Enter account number"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="text" placeholder="Enter account number" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Confirm Account Number*</label>
-                            <input type="text" placeholder="Re-enter account number"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="text" placeholder="Re-enter account number" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">IFSC Code*</label>
-                            <input type="text" placeholder="11-character IFSC" pattern="[A-Z]{4}0[A-Z0-9]{6}"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none uppercase"
-                                maxlength="11" required>
+                            <input type="text" placeholder="11-character IFSC" pattern="[A-Z]{4}0[A-Z0-9]{6}" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none uppercase" maxlength="11" required>
                         </div>
                     </div>
-
+                    
                     <div class="bg-blue-100 p-4 rounded-lg mt-6">
                         <p class="text-sm">🔒 Your bank details are secured with 256-bit encryption</p>
                     </div>
 
                     <div class="mt-6 flex justify-between">
-                        <button type="button" onclick="previousStep(1)"
-                            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">← Back</button>
-                        <button type="submit"
-                            class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
+                        <button type="button" onclick="previousStep(1)" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">← Back</button>
+                        <button type="submit" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
                             Continue →
                         </button>
                     </div>
@@ -1006,27 +852,24 @@
             <div id="step3" class="account-step hidden">
                 <h2 class="text-3xl font-bold mb-4">Select Your Investment Plan</h2>
                 <p class="text-gray-600 mb-6">Choose how you want to start investing</p>
-
+                
                 <form onsubmit="nextStep(event, 4)">
                     <div class="space-y-4">
                         <!-- Risk Profile -->
                         <div class="mb-6">
                             <label class="block text-sm font-medium text-gray-700 mb-3">Risk Profile*</label>
                             <div class="grid md:grid-cols-3 gap-4">
-                                <label
-                                    class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-blue-500 transition">
+                                <label class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-blue-500 transition">
                                     <input type="radio" name="risk" value="low" class="mr-2" required>
                                     <span class="font-semibold">Conservative</span>
                                     <p class="text-xs text-gray-600 mt-1">Low risk, stable returns (8-12% p.a.)</p>
                                 </label>
-                                <label
-                                    class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-blue-500 transition">
+                                <label class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-blue-500 transition">
                                     <input type="radio" name="risk" value="medium" class="mr-2" required>
                                     <span class="font-semibold">Moderate</span>
                                     <p class="text-xs text-gray-600 mt-1">Balanced risk (12-18% p.a.)</p>
                                 </label>
-                                <label
-                                    class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-blue-500 transition">
+                                <label class="border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-blue-500 transition">
                                     <input type="radio" name="risk" value="high" class="mr-2" required>
                                     <span class="font-semibold">Aggressive</span>
                                     <p class="text-xs text-gray-600 mt-1">High risk, high returns (18-25% p.a.)</p>
@@ -1036,29 +879,20 @@
 
                         <!-- Initial Investment -->
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Initial Investment
-                                Amount*</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Initial Investment Amount*</label>
                             <div class="grid grid-cols-4 gap-3 mb-3">
-                                <button type="button" onclick="setAmount(1000)"
-                                    class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹1,000</button>
-                                <button type="button" onclick="setAmount(5000)"
-                                    class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹5,000</button>
-                                <button type="button" onclick="setAmount(10000)"
-                                    class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹10,000</button>
-                                <button type="button" onclick="setAmount(25000)"
-                                    class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹25,000</button>
+                                <button type="button" onclick="setAmount(1000)" class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹1,000</button>
+                                <button type="button" onclick="setAmount(5000)" class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹5,000</button>
+                                <button type="button" onclick="setAmount(10000)" class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹10,000</button>
+                                <button type="button" onclick="setAmount(25000)" class="py-2 px-4 border border-gray-300 rounded-lg hover:bg-blue-50">₹25,000</button>
                             </div>
-                            <input type="number" id="investmentAmount" placeholder="Enter amount (Min ₹100)" min="100"
-                                class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="number" id="investmentAmount" placeholder="Enter amount (Min ₹100)" min="100" class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                         </div>
 
                         <!-- Investment Type -->
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Investment
-                                Type*</label>
-                            <select class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none"
-                                required>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Investment Type*</label>
+                            <select class="w-full px-4 py-3 border rounded-lg focus:border-blue-500 focus:outline-none" required>
                                 <option value="">Select Type</option>
                                 <option value="stocks">Direct Stocks (Higher Returns)</option>
                                 <option value="mutual-funds">Mutual Funds (Diversified)</option>
@@ -1077,10 +911,8 @@
                     </div>
 
                     <div class="mt-6 flex justify-between">
-                        <button type="button" onclick="previousStep(2)"
-                            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">← Back</button>
-                        <button type="submit"
-                            class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
+                        <button type="button" onclick="previousStep(2)" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">← Back</button>
+                        <button type="submit" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold">
                             Continue →
                         </button>
                     </div>
@@ -1091,7 +923,7 @@
             <div id="step4" class="account-step hidden">
                 <h2 class="text-3xl font-bold mb-4">Review & Start Investing</h2>
                 <p class="text-gray-600 mb-6">Confirm your details and make your first investment</p>
-
+                
                 <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-6">
                     <h3 class="font-bold text-lg mb-3">Account Summary</h3>
                     <div class="space-y-2 text-sm">
@@ -1130,8 +962,7 @@
                     <h4 class="font-bold mb-2">Terms and Conditions</h4>
                     <div class="text-xs text-gray-600 space-y-2">
                         <p>1. I am 18 years or above and legally eligible to enter into this agreement.</p>
-                        <p>2. I understand that investments are subject to market risks and past performance doesn't
-                            guarantee future returns.</p>
+                        <p>2. I understand that investments are subject to market risks and past performance doesn't guarantee future returns.</p>
                         <p>3. I agree to the platform fee of 20% on profits. No fees will be charged on losses.</p>
                         <p>4. I understand that withdrawals are processed within T+2 working days.</p>
                         <p>5. I have read and understood all the risk disclosures.</p>
@@ -1145,8 +976,7 @@
                     <div class="space-y-3">
                         <label class="flex items-start">
                             <input type="checkbox" class="mt-1 mr-2" required>
-                            <span class="text-sm">I have read and agree to the Terms & Conditions and Risk
-                                Disclosure</span>
+                            <span class="text-sm">I have read and agree to the Terms & Conditions and Risk Disclosure</span>
                         </label>
                         <label class="flex items-start">
                             <input type="checkbox" class="mt-1 mr-2" required>
@@ -1159,10 +989,8 @@
                     </div>
 
                     <div class="mt-6 flex justify-between">
-                        <button type="button" onclick="previousStep(3)"
-                            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">← Back</button>
-                        <button type="submit"
-                            class="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-lg hover:from-green-700 hover:to-blue-700 font-bold text-lg">
+                        <button type="button" onclick="previousStep(3)" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">← Back</button>
+                        <button type="submit" class="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-lg hover:from-green-700 hover:to-blue-700 font-bold text-lg">
                             Make Payment & Start Investing →
                         </button>
                     </div>
@@ -1178,30 +1006,24 @@
                 <h2 class="text-3xl font-bold text-gray-800">Welcome to InvestEdu Pro</h2>
                 <p class="text-gray-600 mt-2">India's #1 Student Investment Platform</p>
             </div>
-
+            
             <!-- Tab Buttons -->
             <div class="flex mb-6 bg-gray-100 rounded-lg p-1">
-                <button id="loginTab" onclick="showLoginForm()"
-                    class="flex-1 py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold transition">Login</button>
-                <button id="registerTab" onclick="showRegisterTab()"
-                    class="flex-1 py-2 px-4 text-gray-600 rounded-lg font-semibold hover:bg-gray-200 transition">Register</button>
+                <button id="loginTab" onclick="showLoginForm()" class="flex-1 py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold transition">Login</button>
+                <button id="registerTab" onclick="showRegisterTab()" class="flex-1 py-2 px-4 text-gray-600 rounded-lg font-semibold hover:bg-gray-200 transition">Register</button>
             </div>
-
+            
             <!-- Login Form -->
             <div id="loginForm">
                 <form onsubmit="handleQuickLogin(event)">
                     <div class="space-y-4">
                         <div>
                             <label class="text-sm font-medium text-gray-700">Email or Mobile</label>
-                            <input type="text" placeholder="Enter email or mobile"
-                                class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="text" placeholder="Enter email or mobile" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="text-sm font-medium text-gray-700">Password</label>
-                            <input type="password" placeholder="Enter password"
-                                class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="password" placeholder="Enter password" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div class="flex items-center justify-between">
                             <label class="flex items-center">
@@ -1211,12 +1033,11 @@
                             <a href="#" class="text-sm text-blue-600 hover:underline">Forgot Password?</a>
                         </div>
                     </div>
-                    <button type="submit"
-                        class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold mt-6">
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 font-semibold mt-6">
                         Login Now →
                     </button>
                 </form>
-
+                
                 <div class="mt-6">
                     <div class="relative">
                         <div class="absolute inset-0 flex items-center">
@@ -1227,29 +1048,23 @@
                         </div>
                     </div>
                     <div class="mt-4 grid grid-cols-2 gap-3">
-                        <button onclick="googleLogin()"
-                            class="flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                        <button onclick="googleLogin()" class="flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
                             <svg class="w-5 h-5" viewBox="0 0 24 24">
-                                <path fill="#4285F4"
-                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                                <path fill="#34A853"
-                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-                                <path fill="#FBBC05"
-                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
-                                <path fill="#EA4335"
-                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                             </svg>
                             <span class="ml-2 text-sm font-medium">Google</span>
                         </button>
-                        <button onclick="phoneLogin()"
-                            class="flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                        <button onclick="phoneLogin()" class="flex items-center justify-center px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
                             <span class="text-xl mr-2">📱</span>
                             <span class="text-sm font-medium">Phone</span>
                         </button>
                     </div>
                 </div>
             </div>
-
+            
             <!-- Register Form (Hidden by default) -->
             <div id="registerForm" class="hidden">
                 <form onsubmit="handleQuickRegister(event)">
@@ -1257,40 +1072,28 @@
                         <div class="grid grid-cols-2 gap-3">
                             <div>
                                 <label class="text-sm font-medium text-gray-700">First Name</label>
-                                <input type="text" placeholder="First name"
-                                    class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                    required>
+                                <input type="text" placeholder="First name" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                             </div>
                             <div>
                                 <label class="text-sm font-medium text-gray-700">Last Name</label>
-                                <input type="text" placeholder="Last name"
-                                    class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                    required>
+                                <input type="text" placeholder="Last name" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                             </div>
                         </div>
                         <div>
                             <label class="text-sm font-medium text-gray-700">Email Address</label>
-                            <input type="email" placeholder="Enter your email"
-                                class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="text-sm font-medium text-gray-700">Mobile Number</label>
-                            <input type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}"
-                                class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="text-sm font-medium text-gray-700">Create Password</label>
-                            <input type="password" placeholder="Minimum 6 characters" minlength="6"
-                                class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                required>
+                            <input type="password" placeholder="Minimum 6 characters" minlength="6" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                         </div>
                         <div>
                             <label class="text-sm font-medium text-gray-700">I am a</label>
-                            <select
-                                class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                                required>
+                            <select class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                                 <option value="">Select Type</option>
                                 <option value="student">Student (Get Special Benefits)</option>
                                 <option value="professional">Working Professional</option>
@@ -1302,25 +1105,21 @@
                         <div>
                             <label class="flex items-center">
                                 <input type="checkbox" required class="mr-2">
-                                <span class="text-sm text-gray-600">I am 18+ years old and agree to terms &
-                                    conditions</span>
+                                <span class="text-sm text-gray-600">I am 18+ years old and agree to terms & conditions</span>
                             </label>
                         </div>
                     </div>
-                    <button type="submit"
-                        class="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 rounded-lg hover:from-green-700 hover:to-blue-700 font-semibold mt-6">
+                    <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 rounded-lg hover:from-green-700 hover:to-blue-700 font-semibold mt-6">
                         Create Free Account →
                     </button>
                 </form>
-
+                
                 <div class="mt-4 bg-yellow-100 p-3 rounded-lg">
-                    <p class="text-sm text-yellow-800">🎁 <strong>Sign-up Bonus:</strong> Get ₹500 bonus on first
-                        investment!</p>
+                    <p class="text-sm text-yellow-800">🎁 <strong>Sign-up Bonus:</strong> Get ₹500 bonus on first investment!</p>
                 </div>
             </div>
-
-            <button onclick="closeModal('loginModal')"
-                class="mt-6 text-gray-500 text-sm w-full hover:text-gray-700">Close</button>
+            
+            <button onclick="closeModal('loginModal')" class="mt-6 text-gray-500 text-sm w-full hover:text-gray-700">Close</button>
         </div>
     </div>
 
@@ -1332,24 +1131,18 @@
             </div>
             <div id="paymentDetails" class="mb-4"></div>
             <div class="space-y-3">
-                <button onclick="processPayment('upi')"
-                    class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/50px-UPI-Logo-vector.svg.png"
-                        class="h-6 mr-2" alt="UPI">
+                <button onclick="processPayment('upi')" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 flex items-center justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/50px-UPI-Logo-vector.svg.png" class="h-6 mr-2" alt="UPI">
                     Pay with UPI
                 </button>
-                <button onclick="processPayment('paytm')"
-                    class="w-full bg-sky-500 text-white py-3 rounded-lg hover:bg-sky-600 flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Paytm_logo.svg/50px-Paytm_logo.svg.png"
-                        class="h-6 mr-2" alt="Paytm">
+                <button onclick="processPayment('paytm')" class="w-full bg-sky-500 text-white py-3 rounded-lg hover:bg-sky-600 flex items-center justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Paytm_logo.svg/50px-Paytm_logo.svg.png" class="h-6 mr-2" alt="Paytm">
                     Pay with Paytm
                 </button>
-                <button onclick="processPayment('card')"
-                    class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700">
+                <button onclick="processPayment('card')" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700">
                     💳 Pay with Debit/Credit Card
                 </button>
-                <button onclick="processPayment('netbanking')"
-                    class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700">
+                <button onclick="processPayment('netbanking')" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700">
                     🏦 Net Banking
                 </button>
             </div>
@@ -1367,8 +1160,7 @@
             <h3 class="text-xl font-bold mb-2">Processing Payment...</h3>
             <p class="text-gray-600" id="loadingText">Verifying details...</p>
             <div class="mt-4 bg-gray-200 rounded-full h-2">
-                <div id="progressBar" class="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full"
-                    style="width: 0%"></div>
+                <div id="progressBar" class="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full" style="width: 0%"></div>
             </div>
         </div>
     </div>
@@ -1386,23 +1178,16 @@
                     <div>
                         <label class="text-sm font-medium text-gray-700">Amount (₹)</label>
                         <div class="grid grid-cols-4 gap-2 mt-2">
-                            <button type="button" onclick="setDepositAmount(500)"
-                                class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹500</button>
-                            <button type="button" onclick="setDepositAmount(1000)"
-                                class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹1000</button>
-                            <button type="button" onclick="setDepositAmount(5000)"
-                                class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹5000</button>
-                            <button type="button" onclick="setDepositAmount(10000)"
-                                class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹10000</button>
+                            <button type="button" onclick="setDepositAmount(500)" class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹500</button>
+                            <button type="button" onclick="setDepositAmount(1000)" class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹1000</button>
+                            <button type="button" onclick="setDepositAmount(5000)" class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹5000</button>
+                            <button type="button" onclick="setDepositAmount(10000)" class="py-2 px-3 border border-gray-300 rounded-lg hover:bg-blue-50 text-sm">₹10000</button>
                         </div>
-                        <input type="number" id="depositAmount" placeholder="Enter amount" min="100"
-                            class="w-full px-4 py-3 border rounded-lg mt-3 focus:border-blue-500 focus:outline-none"
-                            required>
+                        <input type="number" id="depositAmount" placeholder="Enter amount" min="100" class="w-full px-4 py-3 border rounded-lg mt-3 focus:border-blue-500 focus:outline-none" required>
                     </div>
                     <div>
                         <label class="text-sm font-medium text-gray-700">Payment Method</label>
-                        <select class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                            required>
+                        <select class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                             <option value="upi">UPI (Instant)</option>
                             <option value="netbanking">Net Banking</option>
                             <option value="card">Debit/Credit Card</option>
@@ -1410,8 +1195,7 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit"
-                    class="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 rounded-lg hover:from-green-700 hover:to-blue-700 font-semibold mt-6">
+                <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 rounded-lg hover:from-green-700 hover:to-blue-700 font-semibold mt-6">
                     Deposit Now →
                 </button>
             </form>
@@ -1428,23 +1212,18 @@
                 <p class="text-xs text-gray-700">Min withdrawal: ₹500 • Max: ₹1,00,000</p>
             </div>
             <div class="bg-blue-50 p-3 rounded-lg mb-4">
-                <p class="text-sm">Available Balance: <span id="availableBalance"
-                        class="font-bold text-blue-600">₹0</span></p>
-                <p class="text-xs text-gray-600 mt-1">Pending: <span id="pendingBalance" class="font-semibold">₹0</span>
-                </p>
+                <p class="text-sm">Available Balance: <span id="availableBalance" class="font-bold text-blue-600">₹0</span></p>
+                <p class="text-xs text-gray-600 mt-1">Pending: <span id="pendingBalance" class="font-semibold">₹0</span></p>
             </div>
             <form onsubmit="processWithdraw(event)">
                 <div class="space-y-4">
                     <div>
                         <label class="text-sm font-medium text-gray-700">Withdraw Amount (₹)</label>
-                        <input type="number" id="withdrawAmount" placeholder="Enter amount" min="500"
-                            class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                            required>
+                        <input type="number" id="withdrawAmount" placeholder="Enter amount" min="500" class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                     </div>
                     <div>
                         <label class="text-sm font-medium text-gray-700">Bank Account</label>
-                        <select class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none"
-                            required>
+                        <select class="w-full px-4 py-3 border rounded-lg mt-1 focus:border-blue-500 focus:outline-none" required>
                             <option value="">Select Bank Account</option>
                             <option value="sbi">SBI ****1234</option>
                             <option value="hdfc">HDFC ****5678</option>
@@ -1452,8 +1231,7 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit"
-                    class="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-3 rounded-lg hover:from-orange-700 hover:to-red-700 font-semibold mt-6">
+                <button type="submit" class="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-3 rounded-lg hover:from-orange-700 hover:to-red-700 font-semibold mt-6">
                     Request Withdrawal →
                 </button>
             </form>
@@ -1480,8 +1258,7 @@
                     <li>✓ Exclusive Tasks Access</li>
                 </ul>
             </div>
-            <button onclick="closeModal('successModal')"
-                class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700">Start Earning Now</button>
+            <button onclick="closeModal('successModal')" class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700">Start Earning Now</button>
         </div>
     </div>
 
@@ -1489,7 +1266,7 @@
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-
+        
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
@@ -1507,16 +1284,16 @@
                 quickVerify18Plus();
                 return;
             }
-
+            
             const dob = new Date(dobInput);
             const today = new Date();
             const age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000));
-
+            
             if (age < 18) {
                 alert('Sorry, you must be 18 years or older to use this investment platform.');
                 return;
             }
-
+            
             // Hide modal immediately
             document.getElementById('ageVerificationModal').style.display = 'none';
             localStorage.setItem('ageVerified', 'true');
@@ -1568,7 +1345,7 @@
                 openLoginModal();
                 return;
             }
-
+            
             // Show account opening modal for logged in users
             document.getElementById('accountModal').classList.remove('hidden');
             // Reset to step 1
@@ -1581,10 +1358,10 @@
             document.querySelectorAll('.account-step').forEach(step => {
                 step.classList.add('hidden');
             });
-
+            
             // Show current step
             document.getElementById('step' + stepNumber).classList.remove('hidden');
-
+            
             // Update progress bar
             const progress = (stepNumber / 4) * 100;
             document.getElementById('setupProgress').style.width = progress + '%';
@@ -1593,16 +1370,16 @@
 
         function nextStep(event, nextStepNumber) {
             event.preventDefault();
-
+            
             // Save form data
             const formData = new FormData(event.target);
             for (let [key, value] of formData.entries()) {
                 localStorage.setItem('investment_' + key, value);
             }
-
+            
             // Show next step
             showStep(nextStepNumber);
-
+            
             // Update summary if on last step
             if (nextStepNumber === 4) {
                 const amount = document.getElementById('investmentAmount').value || '0';
@@ -1620,12 +1397,12 @@
 
         function completeAccountSetup(event) {
             event.preventDefault();
-
+            
             const amount = document.getElementById('investmentAmount').value || localStorage.getItem('investment_amount') || '1000';
-
+            
             // Close account modal
             document.getElementById('accountModal').classList.add('hidden');
-
+            
             // Show payment modal
             document.getElementById('paymentModal').classList.remove('hidden');
             document.getElementById('paymentDetails').innerHTML = `
@@ -1640,7 +1417,7 @@
                     <p class="text-xs">First-time investors get ₹500 bonus on successful payment!</p>
                 </div>
             `;
-
+            
             localStorage.setItem('investmentAmount', amount);
             localStorage.setItem('accountType', 'investment');
         }
@@ -1670,12 +1447,12 @@
             const form = event.target;
             const emailOrPhone = form.querySelector('input[type="text"]').value;
             const password = form.querySelector('input[type="password"]').value;
-
+            
             // Instant login
             isLoggedIn = true;
             userEmail = emailOrPhone;
             userName = emailOrPhone.includes('@') ? emailOrPhone.split('@')[0] : 'User' + Math.floor(Math.random() * 1000);
-
+            
             // Update UI instantly
             document.querySelectorAll('button').forEach(btn => {
                 if (btn.textContent.includes('Login/Register')) {
@@ -1683,10 +1460,10 @@
                     btn.onclick = showUserProfile;
                 }
             });
-
+            
             closeModal('loginModal');
             updatePortfolio(0);
-
+            
             // Show welcome message
             showNotification(`🎉 Welcome back ${userName}! Start investing now!`);
         }
@@ -1698,13 +1475,13 @@
             const firstName = form.querySelector('input[placeholder="First name"]').value;
             const email = form.querySelector('input[type="email"]').value;
             const userType = form.querySelector('select').value;
-
+            
             // Instant registration
             isLoggedIn = true;
             userEmail = email;
             userName = firstName;
             localStorage.setItem('userType', userType);
-
+            
             // Update UI
             document.querySelectorAll('button').forEach(btn => {
                 if (btn.textContent.includes('Login/Register')) {
@@ -1712,17 +1489,17 @@
                     btn.onclick = showUserProfile;
                 }
             });
-
+            
             closeModal('loginModal');
             updatePortfolio(0);
-
+            
             // Show success message with bonus
             if (userType === 'student') {
                 showNotification('🎓 Welcome Student! You got ₹500 bonus + Extra 10% on all investments!');
             } else {
                 showNotification('🎁 Welcome! You got ₹500 sign-up bonus! Start investing now!');
             }
-
+            
             // Auto-show investment options
             setTimeout(() => {
                 document.getElementById('investments').scrollIntoView({ behavior: 'smooth' });
@@ -1736,14 +1513,14 @@
                 isLoggedIn = true;
                 userName = 'GoogleUser' + Math.floor(Math.random() * 1000);
                 userEmail = userName + '@gmail.com';
-
+                
                 document.querySelectorAll('button').forEach(btn => {
                     if (btn.textContent.includes('Login/Register')) {
                         btn.textContent = `👤 ${userName}`;
                         btn.onclick = showUserProfile;
                     }
                 });
-
+                
                 closeModal('loginModal');
                 showNotification('✅ Logged in with Google successfully!');
             }, 2000);
@@ -1759,14 +1536,14 @@
                         isLoggedIn = true;
                         userName = 'User' + phone.slice(-4);
                         userEmail = phone + '@phone.com';
-
+                        
                         document.querySelectorAll('button').forEach(btn => {
                             if (btn.textContent.includes('Login/Register')) {
                                 btn.textContent = `👤 ${userName}`;
                                 btn.onclick = showUserProfile;
                             }
                         });
-
+                        
                         closeModal('loginModal');
                         showNotification('✅ Phone verification successful!');
                     }
@@ -1809,21 +1586,21 @@
         function processDeposit(event) {
             event.preventDefault();
             const amount = parseInt(document.getElementById('depositAmount').value);
-
+            
             // Show processing
             closeModal('depositModal');
             showNotification('💳 Processing deposit...');
-
+            
             setTimeout(() => {
                 totalDeposited += amount;
                 userBalance += amount;
                 updatePortfolio(userBalance);
-
+                
                 showNotification(`✅ Successfully deposited ₹${amount.toLocaleString()}!`);
-
+                
                 // Start earning automatically (fake earnings)
                 startAutoEarnings();
-
+                
                 // Add to live withdrawals (fake display)
                 addFakeWithdrawal();
             }, 2000);
@@ -1836,7 +1613,7 @@
                 openLoginModal();
                 return;
             }
-
+            
             // Update available balance display
             document.getElementById('availableBalance').textContent = `₹${userBalance.toLocaleString()}`;
             document.getElementById('pendingBalance').textContent = `₹${pendingBalance.toLocaleString()}`;
@@ -1846,18 +1623,18 @@
         function processWithdraw(event) {
             event.preventDefault();
             const amount = parseInt(document.getElementById('withdrawAmount').value);
-
+            
             // Create barriers for withdrawal (keep 90% profit)
             if (amount < 500) {
                 alert('Minimum withdrawal amount is ₹500');
                 return;
             }
-
+            
             if (amount > userBalance) {
                 alert('Insufficient balance!');
                 return;
             }
-
+            
             // Add various barriers to prevent actual withdrawal
             const barriers = [
                 'Complete KYC verification first (Fee: ₹299)',
@@ -1871,16 +1648,16 @@
                 'Minimum account age: 30 days required',
                 'Complete 10 referrals to enable withdrawal'
             ];
-
+            
             const randomBarrier = barriers[Math.floor(Math.random() * barriers.length)];
-
+            
             closeModal('withdrawModal');
-
+            
             // 90% chance of barrier, 10% fake success
             if (Math.random() > 0.1) {
                 setTimeout(() => {
                     alert(`❌ Withdrawal Failed!\n\n${randomBarrier}`);
-
+                    
                     // Move to pending (never actually pay)
                     pendingBalance += amount;
                     updatePortfolio(userBalance);
@@ -1893,9 +1670,9 @@
                     pendingBalance += amount;
                     totalWithdrawn += amount;
                     updatePortfolio(userBalance);
-
+                    
                     showNotification(`✅ Withdrawal of ₹${amount} initiated! Will be credited in 24-48 hours.`);
-
+                    
                     // Add fake delay excuses later
                     setTimeout(() => {
                         showNotification('⚠️ Bank server maintenance. Withdrawal delayed by 24 hours.');
@@ -1972,7 +1749,7 @@
                 gold: { price: 4999, returns: 25000, actualPrice: 4999, processingFee: 999, gst: 899, activationFee: 599, vipFee: 799, priorityFee: 499 },
                 diamond: { price: 9999, returns: 60000, actualPrice: 9999, processingFee: 1999, gst: 1799, activationFee: 999, eliteFee: 1499, expressProcessing: 999 }
             };
-
+            
             const selectedPlan = plans[plan];
             // Show attractive price first
             document.getElementById('paymentModal').classList.remove('hidden');
@@ -1989,7 +1766,7 @@
                     *Processing fee, GST, and activation charges apply during checkout
                 </div>
             `;
-
+            
             // Add hidden subscription auto-renewal
             setTimeout(() => {
                 localStorage.setItem('autoRenewal', 'true');
@@ -2004,42 +1781,42 @@
                 openLoginModal();
                 return;
             }
-
+            
             const investments = {
-                'mutual-fund': {
-                    name: 'Mutual Fund SIP',
-                    min: 100,
+                'mutual-fund': { 
+                    name: 'Mutual Fund SIP', 
+                    min: 100, 
                     risk: 'Low to Medium',
                     returns: '8-12% annually',
                     fee: '20% on profits only'
                 },
-                'stocks': {
-                    name: 'Blue-chip Stocks',
-                    min: 1000,
+                'stocks': { 
+                    name: 'Blue-chip Stocks', 
+                    min: 1000, 
                     risk: 'Medium to High',
                     returns: '12-18% annually',
                     fee: '20% on profits only'
                 },
-                'etf': {
-                    name: 'ETF Portfolio',
-                    min: 5000,
+                'etf': { 
+                    name: 'ETF Portfolio', 
+                    min: 5000, 
                     risk: 'Medium',
                     returns: '10-15% annually',
                     fee: '20% on profits only'
                 },
-                'premium': {
-                    name: 'Managed Portfolio',
-                    min: 10000,
+                'premium': { 
+                    name: 'Managed Portfolio', 
+                    min: 10000, 
                     risk: 'High',
                     returns: '15-25% annually',
                     fee: '20% on profits only'
                 }
             };
-
+            
             const selected = investments[type];
-
+            
             const confirmInvest = confirm(`Investment Details:\n\n📊 ${selected.name}\n💰 Minimum: ₹${selected.min}\n⚠️ Risk Level: ${selected.risk}\n📈 Expected Returns: ${selected.returns}\n💵 Platform Fee: ${selected.fee}\n\n⚠️ IMPORTANT DISCLAIMER:\n• All investments subject to market risks\n• Past performance doesn't guarantee future results\n• You may lose part or all of your investment\n• Platform charges 20% only on profits, 0% on losses\n\nDo you want to proceed?`);
-
+            
             if (confirmInvest) {
                 showInvestmentModal(type, selected);
             }
@@ -2075,9 +1852,9 @@
         function processInvestment(event, type) {
             event.preventDefault();
             const amount = event.target.querySelector('input[type="number"]').value;
-
+            
             document.getElementById('investmentModal').remove();
-
+            
             // Show payment gateway
             showPaymentGateway(amount, type);
         }
@@ -2120,13 +1897,13 @@
                 openLoginModal();
                 return;
             }
-
+            
             if (dailyAdWatchCount >= 10) {
                 alert('Daily limit reached! You\'ve watched 10/10 ads today.\n\nCome back tomorrow or upgrade to Premium for unlimited ads!');
                 upgradeToPremiumAds();
                 return;
             }
-
+            
             // Show ad watching modal
             const adModal = document.createElement('div');
             adModal.className = 'fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center';
@@ -2147,19 +1924,19 @@
                 </div>
             `;
             document.body.appendChild(adModal);
-
+            
             let seconds = 30;
             const interval = setInterval(() => {
                 seconds--;
                 document.getElementById('adTimer').textContent = seconds + ' seconds remaining';
                 document.getElementById('adProgress').style.width = ((30 - seconds) / 30 * 100) + '%';
-
+                
                 if (seconds <= 0) {
                     clearInterval(interval);
                     const earning = Math.floor(Math.random() * 45) + 5; // ₹5-50
                     totalAdEarnings += earning;
                     dailyAdWatchCount++;
-
+                    
                     adModal.innerHTML = `
                         <div class="bg-white rounded-lg p-8 max-w-md w-full m-4 text-center">
                             <div class="text-6xl mb-4">🎉</div>
@@ -2171,10 +1948,10 @@
                             <button onclick="this.parentElement.parentElement.remove();" class="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700">Close</button>
                         </div>
                     `;
-
+                    
                     updatePortfolio(userBalance + earning);
                     showNotification(`💰 You earned ₹${earning} from watching ad!`);
-
+                    
                     // Bonus for watching 10 ads
                     if (dailyAdWatchCount === 10) {
                         setTimeout(() => {
@@ -2192,13 +1969,13 @@
                 openLoginModal();
                 return;
             }
-
+            
             if (dailyClickCount >= 50) {
                 alert('Daily limit reached! You\'ve clicked 50/50 ads today.\n\nUpgrade to Premium for unlimited clicks!');
                 upgradeToPremiumAds();
                 return;
             }
-
+            
             // Show click ads interface
             const clickModal = document.createElement('div');
             clickModal.className = 'fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center';
@@ -2207,7 +1984,7 @@
                     <h3 class="text-2xl font-bold mb-4">Click on Ads to Earn</h3>
                     <p class="text-gray-600 mb-4">Click on each ad and view for 10 seconds to earn!</p>
                     <div class="grid grid-cols-3 gap-4 mb-4">
-                        ${[1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => `
+                        ${[1,2,3,4,5,6,7,8,9].map(i => `
                             <div onclick="clickAd(this, ${i})" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-lg cursor-pointer hover:scale-105 transition text-center">
                                 <div class="text-2xl mb-2">📢</div>
                                 <div class="font-bold">Ad ${i}</div>
@@ -2226,14 +2003,14 @@
 
         function clickAd(element, adNumber) {
             if (element.classList.contains('opacity-50')) return;
-
+            
             element.classList.add('opacity-50', 'pointer-events-none');
             element.innerHTML = `
                 <div class="text-2xl mb-2">⏱️</div>
                 <div class="font-bold">Viewing...</div>
                 <div class="text-xs">10 sec</div>
             `;
-
+            
             let seconds = 10;
             const interval = setInterval(() => {
                 seconds--;
@@ -2242,16 +2019,16 @@
                     const earning = Math.floor(Math.random() * 18) + 2; // ₹2-20
                     totalAdEarnings += earning;
                     dailyClickCount++;
-
+                    
                     element.innerHTML = `
                         <div class="text-2xl mb-2">✅</div>
                         <div class="font-bold">Complete</div>
                         <div class="text-xs">+₹${earning}</div>
                     `;
-
+                    
                     updatePortfolio(userBalance + earning);
                     showNotification(`💰 Earned ₹${earning} from Ad ${adNumber}!`);
-
+                    
                     // Update click count
                     document.querySelector('.text-gray-600').textContent = `Clicks today: ${dailyClickCount}/50`;
                 }
@@ -2264,7 +2041,7 @@
                 openLoginModal();
                 return;
             }
-
+            
             const tasksModal = document.createElement('div');
             tasksModal.className = 'fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center overflow-y-auto';
             tasksModal.innerHTML = `
@@ -2344,14 +2121,14 @@
 
         function completeAdTask(type, amount) {
             showNotification('🔄 Processing task...');
-
+            
             setTimeout(() => {
                 dailyTaskCount++;
                 totalAdEarnings += amount;
                 updatePortfolio(userBalance + amount);
-
+                
                 showNotification(`✅ Task completed! You earned ₹${amount}!`);
-
+                
                 // Bonus for 5 tasks
                 if (dailyTaskCount === 5) {
                     setTimeout(() => {
@@ -2359,7 +2136,7 @@
                         updatePortfolio(userBalance + 500);
                     }, 2000);
                 }
-
+                
                 // Close the modal after completion
                 setTimeout(() => {
                     document.querySelector('.fixed.inset-0')?.remove();
@@ -2374,9 +2151,9 @@
                 openLoginModal();
                 return;
             }
-
+            
             const confirmUpgrade = confirm(`🌟 Premium Ad Package Benefits:\n\n✅ Unlimited ad views daily (normally 10)\n✅ Unlimited ad clicks (normally 50)\n✅ 2X earning rate on all ads\n✅ Priority access to high-paying tasks\n✅ No waiting time between ads\n✅ Exclusive ₹5000+ tasks\n\nPrice: ₹999/month (Limited offer: ₹499)\n\nUpgrade now?`);
-
+            
             if (confirmUpgrade) {
                 document.getElementById('paymentModal').classList.remove('hidden');
                 document.getElementById('paymentDetails').innerHTML = `
@@ -2405,21 +2182,21 @@
                 openLoginModal();
                 return;
             }
-
+            
             const courses = {
                 digital: { name: 'Digital Marketing Mastery', price: 499, seats: 0 },
                 trading: { name: 'Stock Market Trading', price: 799, seats: 0 },
                 freelancing: { name: 'Freelancing Pro', price: 399, seats: 0 }
             };
-
+            
             const selectedCourse = courses[course];
-
+            
             // Show fully booked message
             alert(`🎓 ${selectedCourse.name}\n\n❌ Status: FULLY BOOKED\n👥 Available Seats: 0/500\n\n📅 Next Batch: Opening Next Month\n💡 Join waiting list to get notified\n\n✉️ We'll email you at ${userEmail} when registration opens!`);
-
+            
             // Add to waiting list
             localStorage.setItem(`waitingList_${course}`, userEmail);
-
+            
             setTimeout(() => {
                 alert(`✅ Successfully added to waiting list!\n\nYou're #${Math.floor(Math.random() * 100) + 1} in queue for ${selectedCourse.name}`);
             }, 1000);
@@ -2449,10 +2226,10 @@
         function processPayment(method) {
             closeModal('paymentModal');
             document.getElementById('loadingModal').classList.remove('hidden');
-
+            
             const investmentAmount = parseInt(localStorage.getItem('investmentAmount') || '0');
             const investmentType = localStorage.getItem('investmentType');
-
+            
             // Clear and transparent fee structure
             const charges = {
                 investmentAmount: investmentAmount,
@@ -2460,10 +2237,10 @@
                 gst: Math.min(investmentAmount * 0.0018, 10), // GST on transaction fee
                 totalAmount: investmentAmount + Math.min(investmentAmount * 0.001, 20) + Math.min(investmentAmount * 0.0018, 10)
             };
-
+            
             localStorage.setItem('totalInvested', charges.totalAmount);
             localStorage.setItem('profitFeeRate', '20'); // 20% on profits only
-
+            
             const loadingSteps = [
                 'Connecting to payment gateway...',
                 'Verifying transaction...',
@@ -2471,29 +2248,29 @@
                 'Confirming with exchange...',
                 'Finalizing investment...'
             ];
-
+            
             let step = 0;
             let progress = 0;
-
+            
             const interval = setInterval(() => {
                 if (step < loadingSteps.length) {
                     document.getElementById('loadingText').textContent = loadingSteps[step];
                     step++;
                 }
-
+                
                 progress += 20;
                 document.getElementById('progressBar').style.width = progress + '%';
-
+                
                 if (progress >= 100) {
                     clearInterval(interval);
                     setTimeout(() => {
                         closeModal('loadingModal');
                         showSuccessModal();
-
+                        
                         // Set fake premium status
                         localStorage.setItem('premiumUser', 'true');
                         localStorage.setItem('subscriptionDate', new Date().toISOString());
-
+                        
                         // Start fake earnings display
                         startFakeEarnings();
                     }, 500);
@@ -2504,7 +2281,7 @@
         function showSuccessModal() {
             const amount = localStorage.getItem('investmentAmount');
             const type = localStorage.getItem('investmentType');
-
+            
             document.getElementById('successModal').innerHTML = `
                 <div class="bg-white rounded-lg p-8 max-w-md w-full m-4 text-center">
                     <div class="text-6xl mb-4">✅</div>
@@ -2528,7 +2305,7 @@
                     <button onclick="closeModal('successModal'); updatePortfolio(${amount});" class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700">View Portfolio</button>
                 </div>
             `;
-
+            
             document.getElementById('successModal').classList.remove('hidden');
         }
 
@@ -2546,13 +2323,13 @@
             confetti.style.transition = 'all 3s ease-out';
             confetti.style.zIndex = '9999';
             document.body.appendChild(confetti);
-
+            
             setTimeout(() => {
                 confetti.style.top = '100%';
                 confetti.style.opacity = '0';
                 confetti.style.transform = 'rotate(' + Math.random() * 720 + 'deg)';
             }, 100);
-
+            
             setTimeout(() => confetti.remove(), 3000);
         }
 
@@ -2560,14 +2337,14 @@
         function startFakeEarnings() {
             let fakeBalance = 50; // Show less to students
             let actualProfit = 0; // Track real money from user
-
+            
             setInterval(() => {
                 if (localStorage.getItem('premiumUser') === 'true') {
                     // Show only 10% of what they paid as "earnings"
                     const userPaid = parseInt(localStorage.getItem('totalPaid') || '0');
                     const increment = Math.floor(userPaid * 0.001); // 0.1% per interval
                     fakeBalance += increment;
-
+                    
                     // Update balance display
                     document.querySelectorAll('.bg-green-600').forEach(btn => {
                         if (btn.textContent.includes('Balance')) {
@@ -2575,12 +2352,12 @@
                             btn.classList.add('pulse-animation');
                         }
                     });
-
+                    
                     // Show notification of earning
                     if (Math.random() > 0.7) {
                         showNotification(`💰 You just earned ₹${increment}!`);
                     }
-
+                    
                     // But prevent withdrawal with various excuses
                     if (fakeBalance > 5000) {
                         localStorage.setItem('needsVerification', 'true');
@@ -2601,17 +2378,17 @@
                 { name: 'Share on WhatsApp', reward: 30, actualReward: 0 },
                 { name: 'Refer Friend', reward: 500, actualReward: 0 }
             ];
-
+            
             const task = tasks[Math.floor(Math.random() * tasks.length)];
-
+            
             // Show earning but don't actually credit
             showNotification(`✅ ${task.name} completed! ₹${task.reward} added to pending balance`);
-
+            
             // Increment fake pending balance
             let pendingBalance = parseInt(localStorage.getItem('pendingBalance') || '0');
             pendingBalance += task.reward;
             localStorage.setItem('pendingBalance', pendingBalance);
-
+            
             // Show they need to complete more tasks to withdraw
             if (pendingBalance > 1000) {
                 setTimeout(() => {
@@ -2636,10 +2413,10 @@
                 'Complete profile 100%. Missing: PAN, Bank statement, Address proof',
                 'Student withdrawal window: Only 1st-5th of month'
             ];
-
+            
             const randomBarrier = barriers[Math.floor(Math.random() * barriers.length)];
             alert(`❌ Withdrawal Failed!\n\n${randomBarrier}`);
-
+            
             // Offer "solution" that costs money
             setTimeout(() => {
                 if (confirm('Want instant withdrawal? Upgrade to VIP membership for just ₹2,999!')) {
@@ -2656,18 +2433,18 @@
                     // Show 0.5 rupees per minute to user
                     const fakeEarning = 0.5;
                     dailyEarnings += fakeEarning;
-
+                    
                     // Display earning (but it's just numbers on screen)
                     userBalance += fakeEarning;
                     updatePortfolio(userBalance);
-
+                    
                     // Every 10 minutes show a notification
                     if (Math.random() > 0.95) {
                         showNotification(`💰 You earned ₹${(Math.random() * 10 + 5).toFixed(2)} from auto-trading!`);
                     }
                 }
             }, 60000); // Every 1 minute
-
+            
             // Show smaller increments every 5 seconds for engagement
             setInterval(() => {
                 if (isLoggedIn && userBalance > 0) {
@@ -2681,27 +2458,27 @@
         // Live Withdrawals (Auto-scrolling)
         function startLiveWithdrawals() {
             const names = [
-                'Ravi***2341', 'Anjali***8976', 'Vikash***4521', 'Pooja***7832',
+                'Ravi***2341', 'Anjali***8976', 'Vikash***4521', 'Pooja***7832', 
                 'Suresh***9087', 'Meena***3456', 'Ajay***6754', 'Deepa***1234',
                 'Manish***5678', 'Rekha***8901', 'Sanjay***2345', 'Kavya***6789',
                 'Prakash***0123', 'Shweta***4567', 'Rahul***8910', 'Nidhi***2346',
                 'Gaurav***5679', 'Priyanka***9012', 'Arun***3457', 'Sneha***6790'
             ];
-
+            
             const amounts = [
                 3750, 6500, 9250, 12000, 17500, 28000, 42000, 65000,
                 4500, 11000, 15500, 23000, 31000, 38500, 52000, 75000
             ];
-
+            
             // Add new withdrawal every 3-7 seconds
             setInterval(() => {
                 const withdrawalsDiv = document.getElementById('live-withdrawals');
                 if (!withdrawalsDiv) return;
-
+                
                 const name = names[Math.floor(Math.random() * names.length)];
                 const amount = amounts[Math.floor(Math.random() * amounts.length)];
                 const timeAgo = Math.floor(Math.random() * 5) + 1;
-
+                
                 const newWithdrawal = document.createElement('div');
                 newWithdrawal.className = 'flex justify-between items-center p-3 bg-green-50 rounded-lg animate-fade-in';
                 newWithdrawal.innerHTML = `
@@ -2709,18 +2486,18 @@
                     <span class="font-bold text-green-600">₹${amount.toLocaleString()} withdrawn</span>
                     <span class="text-xs text-gray-500">${timeAgo} min ago</span>
                 `;
-
+                
                 // Add to top
                 withdrawalsDiv.insertBefore(newWithdrawal, withdrawalsDiv.firstChild);
-
+                
                 // Auto-scroll
                 withdrawalsDiv.scrollTop = 0;
-
+                
                 // Remove old ones if more than 10
                 while (withdrawalsDiv.children.length > 10) {
                     withdrawalsDiv.removeChild(withdrawalsDiv.lastChild);
                 }
-
+                
                 // Update total withdrawals
                 const totalElement = document.querySelector('.bg-blue-50 .text-2xl');
                 if (totalElement) {
@@ -2733,7 +2510,7 @@
         function addFakeWithdrawal() {
             const withdrawalsDiv = document.getElementById('live-withdrawals');
             if (!withdrawalsDiv) return;
-
+            
             const fakeWithdrawal = document.createElement('div');
             fakeWithdrawal.className = 'flex justify-between items-center p-3 bg-yellow-50 rounded-lg animate-fade-in';
             fakeWithdrawal.innerHTML = `
@@ -2741,7 +2518,7 @@
                 <span class="font-bold text-yellow-600">₹${(Math.random() * 5000 + 1000).toFixed(0)} processing...</span>
                 <span class="text-xs text-gray-500">Just now</span>
             `;
-
+            
             withdrawalsDiv.insertBefore(fakeWithdrawal, withdrawalsDiv.firstChild);
         }
 
@@ -2897,7 +2674,7 @@
         function showIncomeProof() {
             const proofs = [
                 'Ravi Kumar - Withdrew ₹87,500 today',
-                'Priya Singh - Earned ₹1,25,000 this month',
+                'Priya Singh - Earned ₹1,25,000 this month', 
                 'Amit Sharma - Made ₹2,45,000 in 60 days',
                 'Neha Patel - Withdrew ₹65,000 yesterday'
             ];
@@ -2908,7 +2685,7 @@
         window.addEventListener('DOMContentLoaded', () => {
             // Start live withdrawals
             startLiveWithdrawals();
-
+            
             // Update member count
             setInterval(() => {
                 const onlineCount = document.getElementById('online-count');
@@ -2918,7 +2695,7 @@
                     onlineCount.textContent = (current + change).toLocaleString();
                 }
             }, 5000);
-
+            
             // Update new members
             setInterval(() => {
                 const membersToday = document.querySelector('.bg-purple-50 .text-2xl');
@@ -2957,7 +2734,7 @@
                     'data_charges': 39,
                     'processing': 59
                 };
-
+                
                 // Deduct every day but never show
                 setInterval(() => {
                     let totalDeducted = 0;
@@ -2987,9 +2764,9 @@
                 { step: 9, barrier: 'VIP access', fee: 9999 },
                 { step: 10, barrier: 'Start over - Account expired', fee: 99 }
             ];
-
+            
             let currentStep = parseInt(localStorage.getItem('barrierStep') || '1');
-
+            
             return requirements[currentStep - 1] || requirements[0];
         }
 
@@ -3006,7 +2783,7 @@
                     }, 2000);
                 }
             });
-
+            
             // Track time on site
             let timeOnSite = 0;
             setInterval(() => {
@@ -3048,5 +2825,4 @@
         }
     </script>
 </body>
-
-</html>
+</html>s
